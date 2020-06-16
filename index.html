@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+   <title>Portfolio</title>
+
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+  <form class="survey-form" id="survey-form">
+    <label id="name-label">Name<input type="text" placeholder="Enter your name." id="name" required></label>
+    <label id="email-label">Email<input type="email" placeholder="Enter your email." id="email" required></label>
+    <label id="number-label">Age(optional)<input type="number" placeholder="Age" min="20" max="50" id="number"><label>
+      
+      <label for="" id="dropdown">Which option best describes your current role?
+        <select name="" id="">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full time job</option>
+          <option value="learner">Full time learner</option>
+          <option value="nottosay">Perfer not to say</option>
+        </select>
+      </label>
+      
+      <div>
+        <label for="recom">Would you recommend freeCodeCamp to a friend?</label>
+        <p>
+          <input type="radio" name="recom" value="definitely">Definitely<br>
+          <input type="radio" name="recom" value="maybe">Maybe<br>
+          <input type="radio" name="recom" value="notsure">Not sure
+        </p>
+      </div>
+      
+      <div>
+          <label for="" id="dropdown">What is your favorite feature of freeCodeCamp?
+        <select name="" id="">
+          <option value="challenges">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </label>
+      </div>
+      
+      <div>
+        <label for="skill">What skills you are expert at?</label>
+        <br>
+        <p>
+          <input type="checkbox" name="skill" value="frontend">Front-end Projects<br>
+          <input type="checkbox" name="skill" value="backend">Back-end Projects<br>
+          <input type="checkbox" name="skill" value="data">Data Visualization<br>
+          <input type="checkbox" name="skill" value="challenges">Challenges<br>
+          <input type="checkbox" name="skill" value="opensource">Open Source Community<br>
+          <input type="checkbox" name="skill" value="gitter">Gitter help rooms<br>
+          <input type="checkbox" name="skill" value="videos">Videos<br>
+          <input type="checkbox" name="skill" value="wiki">Wiki<br>
+          <input type="checkbox" name="skill" value="forum">Forum<br>
+          <input type="checkbox" name="skill" value="additional">Additional Courses
+        </p>
+      </div>
+      
+      <label for="comment">Additional Comment</label>
+                 <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+      
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</body>
